@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+  --bg: #07101F;
+  --sb: #0C1526;
+  --card: #0F1D35;
+  --card-hov: #142240;
+  --border: rgba(255, 255, 255, 0.07);
+  --border-hi: rgba(255, 255, 255, 0.14);
+  --blue: #4A90E8;
+  --blue-l: rgba(74, 144, 232, 0.14);
+  --green: #10B981;
+  --green-l: rgba(16, 185, 129, 0.12);
+  --amber: #F59E0B;
+  --amber-l: rgba(245, 158, 11, 0.12);
+  --red: #F87171;
+  --red-l: rgba(248, 113, 113, 0.12);
+  --purple: #A78BFA;
+  --purple-l: rgba(167, 139, 250, 0.12);
+  --cyan: #22D3EE;
+  --cyan-l: rgba(34, 211, 238, 0.12);
+  --orange: #FB923C;
+  --t1: #E2E8F0;
+  --t2: #94A3B8;
+  --t3: #475569;
+  --t4: #1E3050;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  background: var(--bg);
+  color: var(--t1);
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.10);
+  border-radius: 3px;
+}
+
+.syne {
+  font-family: 'Poppins', sans-serif !important;
+  letter-spacing: -0.2px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+
+.card-sm {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.card-hover {
+  transition: all 0.2s ease;
+}
+
+.card-hover:hover {
+  background: var(--card-hov) !important;
+  border-color: var(--border-hi) !important;
+  transform: translateY(-1px);
+}
+
+.nav-item {
+  transition: all 0.15s ease;
+  border-left: 2px solid transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 9px;
+  margin-bottom: 3px;
+  font-size: 14px;
+  color: var(--t2);
+}
+
+.nav-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--t1);
+}
+
+.nav-active {
+  background: var(--blue-l) !important;
+  border-left: 2px solid var(--blue) !important;
+  color: var(--blue) !important;
+  font-weight: 600;
+}
+
+.btn {
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 9px 18px;
+}
+
+.btn-primary {
+  background: var(--blue);
+  color: #ffffff;
+  box-shadow: 0 4px 16px rgba(74, 144, 232, 0.30);
+}
+
+.btn-primary:hover {
+  filter: brightness(1.15);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(74, 144, 232, 0.42);
+}
+
+.btn-ghost {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--t1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.14);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.28);
+  transform: translateY(-1px);
+}
+
+.btn-danger {
+  background: rgba(248, 113, 113, 0.18);
+  color: var(--red);
+  border: 1px solid rgba(248, 113, 113, 0.35);
+}
+
+.btn-danger:hover {
+  background: rgba(248, 113, 113, 0.30);
+  transform: translateY(-1px);
+}
+
+.input {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border);
+  color: var(--t1);
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.18s ease;
+  border-radius: 9px;
+  padding: 10px 14px;
+  width: 100%;
+}
+
+.input:focus {
+  border-color: var(--blue);
+  background: rgba(255, 255, 255, 0.07);
+  box-shadow: 0 0 0 3px var(--blue-l);
+}
+
+.input::placeholder {
+  color: var(--t3);
+}
+
+select.input {
+  cursor: pointer;
+  appearance: none;
+}
+
+textarea.input {
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.tbl-head {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.tbl-head th {
+  padding: 12px 16px;
+  text-align: left;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--t3);
+}
+
+.tbl-body td {
+  padding: 12px 16px;
+  border-top: 1px solid var(--border);
+}
+
+.tbl-row:hover td {
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 20px;
+  white-space:nowrap;
+}
+
+.fade-in {
+  animation: fadeUp 0.25s ease forwards;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.spin {
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.role-card {
+  transition: all 0.22s ease;
+  cursor: pointer;
+}
+
+.role-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 0;
+}
+
+.progress-bar {
+  height: 5px;
+  background: var(--border);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.5s ease;
+}
+
+.section-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--t3);
+}
+
+/* Modal form helpers */
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 18px;
+}
+
+.form-field label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--t2);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
+.confirm-danger {
+  background: var(--red-l);
+  border: 1px solid rgba(248,113,113,0.2);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 24px;
+  font-size: 14px;
+  color: var(--t2);
+  line-height: 1.6;
+}
