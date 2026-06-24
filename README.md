@@ -1,6 +1,6 @@
-# Vortex
+# VortexCMS
 
-Vortex is a full-stack web application developed as a collaborative project by **Team Vortex**. The platform combines a modern client interface with a robust backend to deliver a secure, scalable, and efficient user experience.
+VortexCMS is a full-stack web application developed as a collaborative project by **Team Vortex**. The platform combines a modern client interface with a robust backend to deliver a secure, scalable, and efficient user experience.
 
 This repository contains both the frontend and backend components of the application, along with all resources required for development and deployment.
 
