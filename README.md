@@ -42,13 +42,12 @@ The project follows a client-server architecture, where the frontend communicate
 
 ```text
 Vortex/
-├── frontend/          # Client-side application
+├── src/          # Client-side application
 ├── backend/           # Server-side application
-├── docs/              # Project documentation (optional)
-├── assets/            # Images and static assets (optional)
+├── docs/              # Project documentation 
 ├── .gitignore
 ├── README.md
-└── package.json       # If using a monorepo
+└── package.json       
 ```
 
 ## Getting Started
