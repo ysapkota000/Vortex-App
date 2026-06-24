@@ -1,45 +1,154 @@
-# Smart College Management System (SCMS)
+# Vortex Backend
 
-A complete, real-world multi-file React web application for managing college operations. This project was transformed from a single-file prototype into a professional project structure.
+Backend API for **Vortex**, powering authentication, database operations, and server-side functionality.
 
-## 🚀 Getting Started
+## 🚀 Tech Stack
 
-### Prerequisites
-- Node.js (v16 or higher)
-- npm or yarn
+- Node.js
+- Express.js
+- MySQL
+- JWT Authentication
+- bcrypt
+- Axios
+- dotenv
 
-### Installation
-1. Extract the ZIP file.
-2. Open the folder in VS Code.
-3. Open the terminal and run:
-   ```bash
-   npm install
-   ```
+---
 
-### Running the Project
-To start the development server:
+## 📂 Project Structure
+
+```
+backend/
+├── controllers/
+├── middleware/
+├── models/
+├── routes/
+├── config/
+├── app.js
+├── package.json
+└── .env
+```
+
+---
+
+## ⚙️ Prerequisites
+
+- Node.js (v18 or later)
+- npm
+- MySQL Server
+
+---
+
+## 📦 Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/YOUR_USERNAME/vortex-backend.git
+cd vortex-backend
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+---
+
+## 🔐 Environment Variables
+
+Create a `.env` file in the project root.
+
+Example:
+
+```env
+PORT=5000
+
+DB_HOST=localhost
+DB_PORT=3306
+DB_USER=your_username
+DB_PASSWORD=your_password
+DB_NAME=your_database
+
+JWT_SECRET=your_jwt_secret
+```
+
+---
+
+## ▶️ Running the Server
+
+Development mode:
+
 ```bash
 npm run dev
 ```
-The application will be available at `http://localhost:5173`.
 
-## 📁 Project Structure
+Production mode:
 
-- `src/components/`: Reusable UI components (StatCard, Shared components).
-- `src/pages/`: Main page components (Dashboard, etc.).
-- `src/layouts/`: Application layouts (Sidebar, Header).
-- `src/data/`: Mock data and constants.
-- `src/utils/`: Utility functions and theme configuration.
-- `src/styles/`: Global CSS and styling.
+```bash
+npm start
+```
 
-## 🛠️ Technologies Used
-- **React.js**: Frontend framework.
-- **Vite**: Build tool and dev server.
-- **Lucide React**: Icon library.
-- **Recharts**: Data visualization.
-- **Syne & DM Sans**: Modern typography.
+The server will start on:
 
-## 👥 Roles
-- **Student**: View grades, attendance, and schedule.
-- **Teacher**: Manage students, mark attendance, and post announcements.
-- **Admin**: System-wide analytics and user management.
+```
+http://localhost:5000
+```
+
+---
+
+## 📜 Available Scripts
+
+| Command | Description |
+|---------|-------------|
+| `npm start` | Starts the production server |
+| `npm run dev` | Starts the server with Nodemon |
+
+---
+
+## 📦 Dependencies
+
+- Express
+- MySQL2
+- JWT
+- bcrypt
+- dotenv
+- cors
+- axios
+
+---
+
+## 🔒 Security
+
+Never commit:
+
+- `.env`
+- `node_modules`
+
+Your `.gitignore` should contain:
+
+```gitignore
+node_modules/
+.env
+```
+
+---
+
+## 🤝 Contributing
+
+1. Fork the repository.
+2. Create a feature branch.
+3. Commit your changes.
+4. Open a Pull Request.
+
+---
+
+## 📄 License
+
+This project is licensed under the ISC License.
+
+---
+
+## 👨‍💻 Author
+
+**Rahul Rimal**
