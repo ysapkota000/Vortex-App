@@ -1,65 +1,87 @@
-# Vortex Backend
+# Vortex
 
-Backend API for **Vortex**, powering authentication, database operations, and server-side functionality.
+Vortex is a full-stack web application developed as a collaborative project by **Team Vortex**. The platform combines a modern client interface with a robust backend to deliver a secure, scalable, and efficient user experience.
 
-## 🚀 Tech Stack
+This repository contains both the frontend and backend components of the application, along with all resources required for development and deployment.
 
-- Node.js
-- Express.js
-- MySQL
-- JWT Authentication
-- bcrypt
-- Axios
-- dotenv
+## Project Overview
 
----
+The project follows a client-server architecture, where the frontend communicates with the backend through RESTful APIs. The backend manages business logic, authentication, and database operations, while the frontend provides an intuitive and responsive user interface.
 
-## 📂 Project Structure
+## Features
 
+* Modern and responsive user interface
+* RESTful API architecture
+* User authentication and authorization
+* Secure password encryption
+* Database integration
+* Environment-based configuration
+* Modular project structure
+* Scalable and maintainable codebase
+
+## Technology Stack
+
+### Frontend
+
+* HTML5
+* CSS3
+* JavaScript
+* *(Add React, Vue, or another framework if applicable.)*
+
+### Backend
+
+* Node.js
+* Express.js
+* MySQL
+* JSON Web Token (JWT)
+* bcrypt
+* Axios
+* dotenv
+
+## Repository Structure
+
+```text
+Vortex/
+├── frontend/          # Client-side application
+├── backend/           # Server-side application
+├── docs/              # Project documentation (optional)
+├── assets/            # Images and static assets (optional)
+├── .gitignore
+├── README.md
+└── package.json       # If using a monorepo
 ```
-backend/
-├── controllers/
-├── middleware/
-├── models/
-├── routes/
-├── config/
-├── app.js
-├── package.json
-└── .env
-```
 
----
+## Getting Started
 
-## ⚙️ Prerequisites
+### Prerequisites
 
-- Node.js (v18 or later)
-- npm
-- MySQL Server
+* Node.js (v18 or later)
+* npm
+* MySQL Server
+* Git
 
----
-
-## 📦 Installation
-
-Clone the repository:
+### Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/vortex-backend.git
-cd vortex-backend
+git clone https://github.com/<your-organization-or-username>/vortex.git
+cd vortex
 ```
 
-Install dependencies:
+### Install Dependencies
+
+If the frontend and backend are separate:
 
 ```bash
+cd frontend
+npm install
+
+cd ../backend
 npm install
 ```
 
----
+### Configure Environment Variables
 
-## 🔐 Environment Variables
-
-Create a `.env` file in the project root.
-
-Example:
+Create a `.env` file inside the `backend` directory and configure the required environment variables.
 
 ```env
 PORT=5000
@@ -70,85 +92,39 @@ DB_USER=your_username
 DB_PASSWORD=your_password
 DB_NAME=your_database
 
-JWT_SECRET=your_jwt_secret
+JWT_SECRET=your_secret_key
 ```
 
----
+## Running the Project
 
-## ▶️ Running the Server
-
-Development mode:
+Start the backend:
 
 ```bash
+cd backend
 npm run dev
 ```
 
-Production mode:
+Start the frontend:
 
 ```bash
+cd frontend
 npm start
 ```
 
-The server will start on:
+## Project Structure
 
-```
-http://localhost:5000
-```
+* **Frontend**: Handles the user interface and client-side interactions.
+* **Backend**: Provides APIs, authentication, and database management.
+* **Database**: Stores application data and user information.
 
----
+## Contributing
 
-## 📜 Available Scripts
+This project is developed collaboratively by **Team Vortex**. Team members should create feature branches, submit pull requests, and ensure code reviews are completed before merging changes into the main branch.
 
-| Command | Description |
-|---------|-------------|
-| `npm start` | Starts the production server |
-| `npm run dev` | Starts the server with Nodemon |
+## Development Team
 
----
+Developed and maintained by **Team Vortex**.
 
-## 📦 Dependencies
+## Acknowledgements
 
-- Express
-- MySQL2
-- JWT
-- bcrypt
-- dotenv
-- cors
-- axios
-
----
-
-## 🔒 Security
-
-Never commit:
-
-- `.env`
-- `node_modules`
-
-Your `.gitignore` should contain:
-
-```gitignore
-node_modules/
-.env
-```
-
----
-
-## 🤝 Contributing
-
-1. Fork the repository.
-2. Create a feature branch.
-3. Commit your changes.
-4. Open a Pull Request.
-
----
-
-## 📄 License
-
-This project is licensed under the ISC License.
-
----
-
-## 👨‍💻 Author
-
-**Rahul Rimal**
+We thank everyone who contributed to the design, development, testing, and documentation of the Vortex project.
